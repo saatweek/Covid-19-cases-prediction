@@ -17,7 +17,7 @@ c = random.random()
 
 plt.scatter(x, y)
 
-n = 4
+n = 5
 
 m=[]
 x_real = []
@@ -35,7 +35,7 @@ x_real = np.transpose(x_real)
 y_hat = np.matmul(x_real, m)+c    
 
     
-error = 0.5*(np.sum((y-y_hat)**2))
+error = 0.9*(np.sum((y-y_hat)**2))
 print(error)
 
 sum = np.sum(y_hat-y)
@@ -59,3 +59,4 @@ x_real = np.array(x_real)
 x_real = np.transpose(x_real)
 y_hat = np.matmul(x_real, m)+c
 print(y_hat)
+#end of this 
